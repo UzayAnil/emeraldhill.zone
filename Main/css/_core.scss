@@ -1,0 +1,101 @@
+[id='center'] {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+[id='container'] {
+  padding-top: 200px;
+  width: 9999em;
+  margin-left: -2060em;
+
+
+  // vertical media queries
+
+
+
+  // short screens
+  @media (max-height:600px) {
+    padding-top: 40px;
+    .sonic-wrapper {
+      top: 280px;
+    }
+  }
+
+  // really short screens
+  @media (max-height:500px) {
+    padding-top: 0;
+    margin-top: -40px;
+    .sonic-wrapper {
+      top: 200px;
+    }
+  }
+
+  // tall screens
+  @media (min-height:800px) {
+    padding-top: 270px;
+    .sonic-wrapper {
+      top: 514px;
+    }
+  }
+  
+}
+
+.mute-button,
+.info-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0.5em 0 0 0.5em;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 2em;
+  height: 2em;
+  text-indent: -9999px;
+  z-index: 1;
+}
+
+.mute-button {
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDI0IDI0IiBoZWlnaHQ9IjI0cHgiIGlkPSJMYXllcl8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0cHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxnPjxnPjxwYXRoIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTE5Ljc3OSwzLjM0OWwtMS4xMTEsMS42NjRDMjAuNjk5LDYuNjYzLDIyLDkuMTc5LDIyLDEyICAgIGMwLDIuODIyLTEuMzAxLDUuMzM4LTMuMzMyLDYuOTg4bDEuMTExLDEuNjYzQzIyLjM0NSwxOC42MzksMjQsMTUuNTE2LDI0LDEyQzI0LDguNDg1LDIyLjM0Niw1LjM2MiwxOS43NzksMy4zNDl6IE0xNy41NSw2LjY4NyAgICBsLTEuMTIyLDEuNjhjMC45NjgsMC45MTMsMS41OCwyLjE5OCwxLjU4LDMuNjM0cy0wLjYxMiwyLjcyMi0xLjU4LDMuNjM1bDEuMTIyLDEuNjhDMTkuMDQ3LDE2LjAzLDIwLDE0LjEyOCwyMCwxMiAgICBDMjAsOS44NzMsMTkuMDQ4LDcuOTcxLDE3LjU1LDYuNjg3eiBNMTIsMWMtMS4xNzcsMC0xLjUzMywwLjY4NC0xLjUzMywwLjY4NFM3LjQwNiw1LjA0Nyw1LjI5OCw2LjUzMUM0LjkxLDYuNzc4LDQuNDg0LDcsMy43Myw3ICAgIEgyQzAuODk2LDcsMCw3Ljg5NiwwLDl2NmMwLDEuMTA0LDAuODk2LDIsMiwyaDEuNzNjMC43NTQsMCwxLjE4LDAuMjIyLDEuNTY3LDAuNDY5YzIuMTA4LDEuNDg0LDUuMTY5LDQuODQ4LDUuMTY5LDQuODQ4ICAgIFMxMC44MjMsMjMsMTIsMjNjMS4xMDQsMCwyLTAuODk1LDItMlYzQzE0LDEuODk1LDEzLjEwNCwxLDEyLDF6IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz48L2c+PC9nPjwvc3ZnPg==);
+  @include opacity(0.2);
+  &.active {
+    @include opacity(0.4);
+  }
+}
+
+.info-button {
+  left: 2.7em;
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDUxMiA1MTIiIGhlaWdodD0iNTEycHgiIGlkPSJMYXllcl8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiB3aWR0aD0iNTEycHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxwYXRoIGQ9Ik0yNTYsNTEyQzExNC42MjUsNTEyLDAsMzk3LjM5MSwwLDI1NkMwLDExNC42MjUsMTE0LjYyNSwwLDI1NiwwczI1NiwxMTQuNjI1LDI1NiwyNTZDNTEyLDM5Ny4zOTEsMzk3LjM3NSw1MTIsMjU2LDUxMnogICBNMjU2LDY0QzE0OS45NjksNjQsNjQsMTQ5Ljk2OSw2NCwyNTZzODUuOTY5LDE5MiwxOTIsMTkyYzEwNi4wMywwLDE5Mi04NS45NjksMTkyLTE5MlMzNjIuMDMxLDY0LDI1Niw2NHoiLz48cGF0aCBkPSJNMjU2LDEyOGMtNTMuMDMxLDAtOTYsNDIuOTg0LTk2LDk2aDY0YzAtMTcuNjcyLDE0LjMxMi0zMiwzMi0zMmMxNy42ODgsMCwzMiwxNC4zMjgsMzIsMzJzLTE0LjMxMiwzMi0zMiwzMiAgYy0xLjIyNiwwLTUuMTA4LDAtMTYsMGMtOC44NDUsMC0xNiw3LjE3Mi0xNiwxNnY0OGg2NHYtNS44NzVjMzcuMTg4LTEzLjIxOSw2NC00OC4zOTEsNjQtOTAuMTI1QzM1MiwxNzAuOTg0LDMwOS4wMzEsMTI4LDI1NiwxMjh6Ii8+PHBvbHlnb24gcG9pbnRzPSIyNTYsMzUyIDIyNCwzNTIgMjI0LDM4NCAyNTYsMzg0IDI4OCwzODQgMjg4LDM1MiAiLz48L3N2Zz4=);
+  @include opacity(0.4);
+}
+
+.panel-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60%;
+  z-index: 5;
+
+  .panel {
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+    background-color: $transparent-bg;
+    display: none;
+  }
+}
+
+p {
+  margin: 0 0 0.2em;
+}
+
+body.perspective {
+    perspective: 110px;
+    height: 800px;
+
+    [id='container'] {
+      transform: rotate3d(0, 1, 0, 9deg);
+      width: initial;
+      margin-left: initial;
+    }
+
+}
