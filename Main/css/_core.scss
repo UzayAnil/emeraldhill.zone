@@ -84,8 +84,11 @@
   }
 }
 
-p {
+p, a {
   margin: 0 0 0.2em;
+  font-size: 14px;
+  line-height: 1.25;
+  display: block;
 }
 
 body.perspective {

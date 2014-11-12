@@ -46,7 +46,7 @@ app.emeraldHill = (function () {
 			e.preventDefault();
 
 			// trigger jump if touch top area
-			if (e.type === 'touchmove' && getOffsetResultY < -25) {
+			if (e.type === 'touchmove' && getOffsetResultY < -35) {
 				app.emeraldHill.jump();
 			}
 
@@ -75,7 +75,11 @@ app.emeraldHill = (function () {
 			if ( getOffsetResultAbs < stopSpeed) {
 				// stopped
 				$('#speed').text('stop');
-				$container.removeClass()
+				
+				// else the standing still jump will have its class removed
+				if (!jumping) {
+					$container.removeClass()
+				}
 
 				// we're stationary, initiate the bored function
 				bored();
@@ -261,6 +265,7 @@ app.emeraldHill = (function () {
 
 		var jumpUpAnimation = function() {
 
+
 			if (jumping) return;
 
 			// remove bored animation first
@@ -434,18 +439,6 @@ app.emeraldHill = (function () {
 		}).keyup(function(e) {
 		    comboMap[e.keyCode] = false;
 		    comboDown.length = 0;
-		});
-
-
-		// performance measure
-
-		$(window).load(function(){
-
-			setTimeout(function(){
-		    	var t = performance.timing;
-		    	$('#dom-load').text(t.loadEventEnd - t.responseEnd);
-		  	}, 0);
-
 		});
 
 	};
