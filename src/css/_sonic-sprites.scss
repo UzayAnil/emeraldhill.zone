@@ -1,0 +1,297 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+*/
+$bored1-x: 0px;
+$bored1-y: 0px;
+$bored1-offset-x: 0px;
+$bored1-offset-y: 0px;
+$bored1-width: 90px;
+$bored1-height: 80px;
+$bored1-total-width: 2250px;
+$bored1-total-height: 80px;
+$bored1-image: '../img/sonic-sprites.png';
+$bored1: 0px 0px 0px 0px 90px 80px 2250px 80px '../img/sonic-sprites.png';
+$bored2-x: 90px;
+$bored2-y: 0px;
+$bored2-offset-x: -90px;
+$bored2-offset-y: 0px;
+$bored2-width: 90px;
+$bored2-height: 80px;
+$bored2-total-width: 2250px;
+$bored2-total-height: 80px;
+$bored2-image: '../img/sonic-sprites.png';
+$bored2: 90px 0px -90px 0px 90px 80px 2250px 80px '../img/sonic-sprites.png';
+$bored3-x: 180px;
+$bored3-y: 0px;
+$bored3-offset-x: -180px;
+$bored3-offset-y: 0px;
+$bored3-width: 90px;
+$bored3-height: 80px;
+$bored3-total-width: 2250px;
+$bored3-total-height: 80px;
+$bored3-image: '../img/sonic-sprites.png';
+$bored3: 180px 0px -180px 0px 90px 80px 2250px 80px '../img/sonic-sprites.png';
+$bored4-x: 270px;
+$bored4-y: 0px;
+$bored4-offset-x: -270px;
+$bored4-offset-y: 0px;
+$bored4-width: 90px;
+$bored4-height: 80px;
+$bored4-total-width: 2250px;
+$bored4-total-height: 80px;
+$bored4-image: '../img/sonic-sprites.png';
+$bored4: 270px 0px -270px 0px 90px 80px 2250px 80px '../img/sonic-sprites.png';
+$bored5-x: 360px;
+$bored5-y: 0px;
+$bored5-offset-x: -360px;
+$bored5-offset-y: 0px;
+$bored5-width: 90px;
+$bored5-height: 80px;
+$bored5-total-width: 2250px;
+$bored5-total-height: 80px;
+$bored5-image: '../img/sonic-sprites.png';
+$bored5: 360px 0px -360px 0px 90px 80px 2250px 80px '../img/sonic-sprites.png';
+$bored6-x: 450px;
+$bored6-y: 0px;
+$bored6-offset-x: -450px;
+$bored6-offset-y: 0px;
+$bored6-width: 90px;
+$bored6-height: 80px;
+$bored6-total-width: 2250px;
+$bored6-total-height: 80px;
+$bored6-image: '../img/sonic-sprites.png';
+$bored6: 450px 0px -450px 0px 90px 80px 2250px 80px '../img/sonic-sprites.png';
+$bored7-x: 540px;
+$bored7-y: 0px;
+$bored7-offset-x: -540px;
+$bored7-offset-y: 0px;
+$bored7-width: 90px;
+$bored7-height: 80px;
+$bored7-total-width: 2250px;
+$bored7-total-height: 80px;
+$bored7-image: '../img/sonic-sprites.png';
+$bored7: 540px 0px -540px 0px 90px 80px 2250px 80px '../img/sonic-sprites.png';
+$bored8-x: 630px;
+$bored8-y: 0px;
+$bored8-offset-x: -630px;
+$bored8-offset-y: 0px;
+$bored8-width: 90px;
+$bored8-height: 80px;
+$bored8-total-width: 2250px;
+$bored8-total-height: 80px;
+$bored8-image: '../img/sonic-sprites.png';
+$bored8: 630px 0px -630px 0px 90px 80px 2250px 80px '../img/sonic-sprites.png';
+$jump1-x: 720px;
+$jump1-y: 0px;
+$jump1-offset-x: -720px;
+$jump1-offset-y: 0px;
+$jump1-width: 90px;
+$jump1-height: 80px;
+$jump1-total-width: 2250px;
+$jump1-total-height: 80px;
+$jump1-image: '../img/sonic-sprites.png';
+$jump1: 720px 0px -720px 0px 90px 80px 2250px 80px '../img/sonic-sprites.png';
+$jump2-x: 810px;
+$jump2-y: 0px;
+$jump2-offset-x: -810px;
+$jump2-offset-y: 0px;
+$jump2-width: 90px;
+$jump2-height: 80px;
+$jump2-total-width: 2250px;
+$jump2-total-height: 80px;
+$jump2-image: '../img/sonic-sprites.png';
+$jump2: 810px 0px -810px 0px 90px 80px 2250px 80px '../img/sonic-sprites.png';
+$jump3-x: 900px;
+$jump3-y: 0px;
+$jump3-offset-x: -900px;
+$jump3-offset-y: 0px;
+$jump3-width: 90px;
+$jump3-height: 80px;
+$jump3-total-width: 2250px;
+$jump3-total-height: 80px;
+$jump3-image: '../img/sonic-sprites.png';
+$jump3: 900px 0px -900px 0px 90px 80px 2250px 80px '../img/sonic-sprites.png';
+$jump4-x: 990px;
+$jump4-y: 0px;
+$jump4-offset-x: -990px;
+$jump4-offset-y: 0px;
+$jump4-width: 90px;
+$jump4-height: 80px;
+$jump4-total-width: 2250px;
+$jump4-total-height: 80px;
+$jump4-image: '../img/sonic-sprites.png';
+$jump4: 990px 0px -990px 0px 90px 80px 2250px 80px '../img/sonic-sprites.png';
+$run1-x: 1080px;
+$run1-y: 0px;
+$run1-offset-x: -1080px;
+$run1-offset-y: 0px;
+$run1-width: 90px;
+$run1-height: 80px;
+$run1-total-width: 2250px;
+$run1-total-height: 80px;
+$run1-image: '../img/sonic-sprites.png';
+$run1: 1080px 0px -1080px 0px 90px 80px 2250px 80px '../img/sonic-sprites.png';
+$run2-x: 1170px;
+$run2-y: 0px;
+$run2-offset-x: -1170px;
+$run2-offset-y: 0px;
+$run2-width: 90px;
+$run2-height: 80px;
+$run2-total-width: 2250px;
+$run2-total-height: 80px;
+$run2-image: '../img/sonic-sprites.png';
+$run2: 1170px 0px -1170px 0px 90px 80px 2250px 80px '../img/sonic-sprites.png';
+$run3-x: 1260px;
+$run3-y: 0px;
+$run3-offset-x: -1260px;
+$run3-offset-y: 0px;
+$run3-width: 90px;
+$run3-height: 80px;
+$run3-total-width: 2250px;
+$run3-total-height: 80px;
+$run3-image: '../img/sonic-sprites.png';
+$run3: 1260px 0px -1260px 0px 90px 80px 2250px 80px '../img/sonic-sprites.png';
+$run4-x: 1350px;
+$run4-y: 0px;
+$run4-offset-x: -1350px;
+$run4-offset-y: 0px;
+$run4-width: 90px;
+$run4-height: 80px;
+$run4-total-width: 2250px;
+$run4-total-height: 80px;
+$run4-image: '../img/sonic-sprites.png';
+$run4: 1350px 0px -1350px 0px 90px 80px 2250px 80px '../img/sonic-sprites.png';
+$stopped-x: 1440px;
+$stopped-y: 0px;
+$stopped-offset-x: -1440px;
+$stopped-offset-y: 0px;
+$stopped-width: 90px;
+$stopped-height: 80px;
+$stopped-total-width: 2250px;
+$stopped-total-height: 80px;
+$stopped-image: '../img/sonic-sprites.png';
+$stopped: 1440px 0px -1440px 0px 90px 80px 2250px 80px '../img/sonic-sprites.png';
+$walk1-x: 1530px;
+$walk1-y: 0px;
+$walk1-offset-x: -1530px;
+$walk1-offset-y: 0px;
+$walk1-width: 90px;
+$walk1-height: 80px;
+$walk1-total-width: 2250px;
+$walk1-total-height: 80px;
+$walk1-image: '../img/sonic-sprites.png';
+$walk1: 1530px 0px -1530px 0px 90px 80px 2250px 80px '../img/sonic-sprites.png';
+$walk2-x: 1620px;
+$walk2-y: 0px;
+$walk2-offset-x: -1620px;
+$walk2-offset-y: 0px;
+$walk2-width: 90px;
+$walk2-height: 80px;
+$walk2-total-width: 2250px;
+$walk2-total-height: 80px;
+$walk2-image: '../img/sonic-sprites.png';
+$walk2: 1620px 0px -1620px 0px 90px 80px 2250px 80px '../img/sonic-sprites.png';
+$walk3-x: 1710px;
+$walk3-y: 0px;
+$walk3-offset-x: -1710px;
+$walk3-offset-y: 0px;
+$walk3-width: 90px;
+$walk3-height: 80px;
+$walk3-total-width: 2250px;
+$walk3-total-height: 80px;
+$walk3-image: '../img/sonic-sprites.png';
+$walk3: 1710px 0px -1710px 0px 90px 80px 2250px 80px '../img/sonic-sprites.png';
+$walk4-x: 1800px;
+$walk4-y: 0px;
+$walk4-offset-x: -1800px;
+$walk4-offset-y: 0px;
+$walk4-width: 90px;
+$walk4-height: 80px;
+$walk4-total-width: 2250px;
+$walk4-total-height: 80px;
+$walk4-image: '../img/sonic-sprites.png';
+$walk4: 1800px 0px -1800px 0px 90px 80px 2250px 80px '../img/sonic-sprites.png';
+$walk5-x: 1890px;
+$walk5-y: 0px;
+$walk5-offset-x: -1890px;
+$walk5-offset-y: 0px;
+$walk5-width: 90px;
+$walk5-height: 80px;
+$walk5-total-width: 2250px;
+$walk5-total-height: 80px;
+$walk5-image: '../img/sonic-sprites.png';
+$walk5: 1890px 0px -1890px 0px 90px 80px 2250px 80px '../img/sonic-sprites.png';
+$walk6-x: 1980px;
+$walk6-y: 0px;
+$walk6-offset-x: -1980px;
+$walk6-offset-y: 0px;
+$walk6-width: 90px;
+$walk6-height: 80px;
+$walk6-total-width: 2250px;
+$walk6-total-height: 80px;
+$walk6-image: '../img/sonic-sprites.png';
+$walk6: 1980px 0px -1980px 0px 90px 80px 2250px 80px '../img/sonic-sprites.png';
+$walk7-x: 2070px;
+$walk7-y: 0px;
+$walk7-offset-x: -2070px;
+$walk7-offset-y: 0px;
+$walk7-width: 90px;
+$walk7-height: 80px;
+$walk7-total-width: 2250px;
+$walk7-total-height: 80px;
+$walk7-image: '../img/sonic-sprites.png';
+$walk7: 2070px 0px -2070px 0px 90px 80px 2250px 80px '../img/sonic-sprites.png';
+$walk8-x: 2160px;
+$walk8-y: 0px;
+$walk8-offset-x: -2160px;
+$walk8-offset-y: 0px;
+$walk8-width: 90px;
+$walk8-height: 80px;
+$walk8-total-width: 2250px;
+$walk8-total-height: 80px;
+$walk8-image: '../img/sonic-sprites.png';
+$walk8: 2160px 0px -2160px 0px 90px 80px 2250px 80px '../img/sonic-sprites.png';
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}

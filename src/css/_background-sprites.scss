@@ -1,0 +1,107 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+*/
+$earth-tile-x: 0px;
+$earth-tile-y: 0px;
+$earth-tile-offset-x: 0px;
+$earth-tile-offset-y: 0px;
+$earth-tile-width: 256px;
+$earth-tile-height: 256px;
+$earth-tile-total-width: 1830px;
+$earth-tile-total-height: 633px;
+$earth-tile-image: '../img/background-sprites.png';
+$earth-tile: 0px 0px 0px 0px 256px 256px 1830px 633px '../img/background-sprites.png';
+$mountains-lower-x: 0px;
+$mountains-lower-y: 256px;
+$mountains-lower-offset-x: 0px;
+$mountains-lower-offset-y: -256px;
+$mountains-lower-width: 975px;
+$mountains-lower-height: 36px;
+$mountains-lower-total-width: 1830px;
+$mountains-lower-total-height: 633px;
+$mountains-lower-image: '../img/background-sprites.png';
+$mountains-lower: 0px 256px 0px -256px 975px 36px 1830px 633px '../img/background-sprites.png';
+$mountains-x: 0px;
+$mountains-y: 292px;
+$mountains-offset-x: 0px;
+$mountains-offset-y: -292px;
+$mountains-width: 710px;
+$mountains-height: 36px;
+$mountains-total-width: 1830px;
+$mountains-total-height: 633px;
+$mountains-image: '../img/background-sprites.png';
+$mountains: 0px 292px 0px -292px 710px 36px 1830px 633px '../img/background-sprites.png';
+$ocean-sparkle-sprite-x: 0px;
+$ocean-sparkle-sprite-y: 328px;
+$ocean-sparkle-sprite-offset-x: 0px;
+$ocean-sparkle-sprite-offset-y: -328px;
+$ocean-sparkle-sprite-width: 518px;
+$ocean-sparkle-sprite-height: 40px;
+$ocean-sparkle-sprite-total-width: 1830px;
+$ocean-sparkle-sprite-total-height: 633px;
+$ocean-sparkle-sprite-image: '../img/background-sprites.png';
+$ocean-sparkle-sprite: 0px 328px 0px -328px 518px 40px 1830px 633px '../img/background-sprites.png';
+$ocean-x: 0px;
+$ocean-y: 368px;
+$ocean-offset-x: 0px;
+$ocean-offset-y: -368px;
+$ocean-width: 1830px;
+$ocean-height: 72px;
+$ocean-total-width: 1830px;
+$ocean-total-height: 633px;
+$ocean-image: '../img/background-sprites.png';
+$ocean: 0px 368px 0px -368px 1830px 72px 1830px 633px '../img/background-sprites.png';
+$sky-x: 0px;
+$sky-y: 440px;
+$sky-offset-x: 0px;
+$sky-offset-y: -440px;
+$sky-width: 1373px;
+$sky-height: 193px;
+$sky-total-width: 1830px;
+$sky-total-height: 633px;
+$sky-image: '../img/background-sprites.png';
+$sky: 0px 440px 0px -440px 1373px 193px 1830px 633px '../img/background-sprites.png';
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}

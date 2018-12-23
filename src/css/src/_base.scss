@@ -1,0 +1,107 @@
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html{
+    font:#{($base-font-size/16px)*1em}/#{$base-line-height} $base-font-family;
+    overflow:hidden;
+    min-height:100%;
+}
+
+body {
+  background-color: $sky-color;
+  overflow: hidden;
+  font-family: Open Sans,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+  color: #323232;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  line-height: 1.5;
+
+}
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: $primary-b;
+  text-shadow: none;
+}
+
+::selection {
+  background: $primary-b;
+  text-shadow: none;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: $transparent-bg;
+  color: $primary-d;
+  padding: 0.2em 0;
+  position: absolute;
+  top: 20%;
+  z-index: 99;
+}
+
+
+footer {
+  position: fixed;
+  bottom: 1rem;
+  width: 100%;
+  text-align: center;
+  font-size: .8rem;
+  color: white;
+  mix-blend-mode: color-dodge;
+}
+
+.footer_link {
+  border-bottom: 3px solid #4040E0;
+  text-decoration: none;
+  color: white;
+  
+
+  &:hover,
+  &:focus {
+    border-color: white;
+  }
+}

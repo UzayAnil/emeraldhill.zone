@@ -354,20 +354,7 @@ app.emeraldHill = (function () {
 
 	var panels = function() {
 
-		var panelVisible = false,
-			$infoPanel = $('#info-panel');
-
-		$('#info-toggle').on('click', function() {
-
-			if (panelVisible) {
-				$infoPanel.hide();
-				panelVisible = false;
-			} else {
-				$infoPanel.show();
-				panelVisible = true;
-			}
-
-		})
+		var panelVisible = false
 
 		// hide panels on click
 

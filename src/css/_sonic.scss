@@ -1,0 +1,109 @@
+$jumpHeight: -240px;
+
+
+.sonic-wrapper {
+	position: absolute;
+	top: 444px;
+	left: 50%;
+	margin-left: -45px;
+	z-index: 1;
+	&.going-up {
+		transition: transform 0.5s cubic-bezier(0.105, 0.510, 0.485, 1.100);	
+		transform: translateY($jumpHeight);
+	}
+	&.going-down {
+		transition: transform 0.48s cubic-bezier(0.470, 0.000, 0.745, 0.715);
+		transform: translateY(0);
+	}
+}
+
+.sonic {
+	@include sprite($stopped);
+
+	[data-direction='left'] & {
+		-moz-transform: scaleX(-1);
+		transform: scaleX(-1);
+		-ms-filter: fliph; /*IE*/
+		filter: fliph; /*IE*/
+	}
+
+	// use steps(#, end) to determine number of frames in a loop
+	// lower animation numbers = faster animations
+
+	.slow & {
+		animation: slow 1.2s steps(8,end) infinite;
+		//@include sprite($walk1);
+	}
+	.medium & {
+		animation: medium 0.8s steps(8,end) infinite;
+		
+	}
+	.fast & {
+		animation: fast 0.5s steps(8,end) infinite;
+		
+	}
+	.run & {
+		animation: run 0.35s steps(4,end) infinite;
+		//@include sprite($run1);
+	}
+	.jumping & {
+		animation: jumping 0.5s steps(4, end) infinite;
+	}
+
+	[data-bored=true] & {
+		animation: boredtwo 0.6s steps(2, end) infinite,
+					boredone 2.1s steps(6, end);
+	}
+	
+	
+
+}
+
+
+
+@keyframes boredone {
+	0% { 
+		background-position: $bored1-offset-x 0px; 
+	}
+	100% { 
+		background-position: ($bored6-offset-x - $bored6-width) 0px; 
+	}
+}
+@keyframes boredtwo {
+	0% { 
+		background-position: $bored7-offset-x 0px; 
+	}
+	100% { 
+		background-position: ($bored8-offset-x - $bored8-width) 0px; 
+	}
+}
+
+
+@keyframes jumping {
+	from { 
+		background-position: $jump1-offset-x 0px; 
+	}
+	to { 
+		background-position: ($jump4-offset-x - $jump4-width) 0px; 
+	}
+}
+
+@keyframes slow {
+    from { background-position: $walk1-offset-x 0px; }
+    to { background-position: -$walk8-total-width 0px; } /* negative of sprite sheet width */
+}
+
+@keyframes medium {
+    from { background-position: $walk1-offset-x 0px; }
+    to { background-position: -$walk8-total-width 0px; } /* negative of sprite sheet width */
+}
+
+@keyframes fast {
+    from { background-position: $walk1-offset-x 0px; }
+    to { background-position: -$walk8-total-width 0px; } /* negative of sprite sheet width */
+}
+
+@keyframes run {
+    from { background-position: $run1-offset-x 0px; }
+    to { background-position: ($run1-offset-x -320px) 0px; } /* negative of sprite sheet width */
+}
